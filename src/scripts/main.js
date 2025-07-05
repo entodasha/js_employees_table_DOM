@@ -1,8 +1,8 @@
 'use strict';
 
 const table = document.querySelector('table');
-const rows = table.querySelectorAll('tr');
 const tbody = table.querySelector('tbody');
+const rows = tbody.querySelectorAll('tr');
 let lastSortedTh = null;
 
 // реалізація сортування і віділення активного ряду
@@ -176,7 +176,7 @@ form.addEventListener('submit', (e) => {
     pushNotification(
       { top: 10, right: 40 },
       'Error',
-      'Name length shold be more than 4',
+      'should be more than 4',
       'error',
     );
 
@@ -187,7 +187,7 @@ form.addEventListener('submit', (e) => {
     pushNotification(
       { top: 10, right: 40 },
       'Error',
-      'Age can not be less of 18 and more than 90',
+      'can not be less of 18 and more than 90',
       'error',
     );
 
